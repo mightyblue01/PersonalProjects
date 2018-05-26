@@ -1,1 +1,16 @@
 Multipurpose utility for file conversion and file comparison
+
+Usage: option1 option2 <input_filename> <output_filename>")
+available choices for option1 -
+  c -> file conversion
+  d -> file comparison
+  
+available choices for option2 -
+  if file conversion is selected as option1 (option1=c)
+    1 -> convert csv to ascii char(1)
+    2 -> convert ascii char(1) to csv
+    3 -> convert csv to parquet
+    4 -> convert parquet to csv
+
+  if file comparison is selected as option1 (option1=d)
+    1 -> compare parquet files
