@@ -1,6 +1,7 @@
 Multipurpose utility for file conversion and file comparison
 
-Usage: option1 option2 <input_filename> <output_filename>")
+Usage: FileUtility.py option1 option2 <input_filename> <output_filename>
+
 available choices for option1 -
   c -> file conversion
   d -> file comparison
