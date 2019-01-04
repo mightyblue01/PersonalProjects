@@ -1,3 +1,3 @@
-# PersonalProjects
+# personal-projects
 
 Personal side projects 
