@@ -1,0 +1,19 @@
+
+Steps to connect Oracle using Python library (cx_Oracle)
+
+cx_Oracle is a Python extension module that enables access to Oracle Database. Following prerequisites need to be installed to support 
+cx_Oracle module -
+(1) Install cx_Oracle python package - pip install cx_Oracle
+(2) Install Oracle Client libraries - 
+    Install libaio library : apt-get install libaio1
+    Download Oracle Instant Client zip file from following URL (Oracle 18, 64bit basic version was downloaded for this use-case)   
+    https://oracle.github.io/odpi/doc/installation.html#linux
+    Unzip the package in a directory and set environment variable LD_LIBRARY_PATH to the appropriate directory for the Instant 
+    Client version- 
+      mkdir -p /opt/oracle
+      cp /base-path/instantclient-basic-linux.x64-18.5.0.0.0dbru.zip /opt/oracle
+      cd /opt/oracle
+      unzip -o instantclient-basic-linux.x64-18.5.0.0.0dbru.zip 
+      sh -c "echo /opt/oracle/instantclient_18_5 > /etc/ld.so.conf.d/oracle-instantclient.conf"
+      export LD_LIBRARY_PATH=/opt/oracle/instantclient_18_5:$LD_LIBRARY_PATH
+      ldconfig
